@@ -1,0 +1,26 @@
+<label>
+  <input
+    id="numericField"
+    name="numericField"
+    type="text"
+    #numericField="ngModel"
+    [(ngModel)]="randomNumber"
+    [ngModelOptions]="{ updateOn: 'blur' }"
+    required
+    pattern="[0-9]+"
+  />
+
+  <span
+    *ngIf="numericField.invalid && (numericField.dirty || numericField.touched)"
+    class="alert alert-danger"
+    @inOutAnimation
+  >
+    <span *ngIf="numericField.errors?.required">
+      {{ "Frère tu dois mettre un nombre 😡" | translate }}
+    </span>
+
+    <span *ngIf="numericField.errors?.pattern">
+      {{ "T'es con ou quoi j'ai dit un nombre 🤬" | translate }}
+    </span>
+  </span>
+</label>
