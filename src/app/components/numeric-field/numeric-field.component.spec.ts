@@ -16,7 +16,6 @@ describe('NumericFieldComponent', () => {
   let component: NumericFieldComponent;
   let fixture: ComponentFixture<NumericFieldComponent>;
   let dom: any;
-  let getRandomNumberSpy: any;
   const testNumber = 4;
 
   const writeValueInInput = async (
@@ -41,9 +40,7 @@ describe('NumericFieldComponent', () => {
     const numericFieldService = jasmine.createSpyObj('NumericFieldService', [
       'getRandomNumber',
     ]);
-    getRandomNumberSpy = numericFieldService.getRandomNumber.and.returnValue(
-      of(testNumber)
-    );
+    numericFieldService.getRandomNumber.and.returnValue(of(testNumber));
 
     await TestBed.configureTestingModule({
       imports: [
