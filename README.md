@@ -167,7 +167,7 @@ If you need to learn more about the differences between these two ones, check ou
 
   ```shell
   mkdir -p src/app/shared
-  touch shared.module.ts
+  touch src/app/shared/shared.module.ts
   ```
 
 - Put the following content in it
