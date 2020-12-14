@@ -70,7 +70,7 @@ So, I used translations, validation, TDD, Server Side Rendering, Services and Sh
   touch .prettierignore
   ```
 
-  Its content looks like your `.gitignore`. For me, it's:
+  Its content looks like your `.gitignore`. For me, it's
 
   ```
   dist
@@ -145,8 +145,8 @@ So, I used translations, validation, TDD, Server Side Rendering, Services and Sh
 
 Here I'm using [ngx-translate](https://github.com/ngx-translate/core) instead of the
 official [`i18n`](https://angular.io/guide/i18n) because this library can change the language of the application on the
-fly and use the JSON format. Plus, Ionic and other big frameworks use this library to translate Angular web apps. So it
-worth it to learn it instead of the official one.
+fly and use the JSON format. Plus, Ionic and other big frameworks use this library to translate Angular web apps. So
+it's worth learning it instead of the official one.
 
 If you need to learn more about the differences between these two ones, check out:
 [https://github.com/ngx-translate/core/issues/495](https://github.com/ngx-translate/core/issues/495)
@@ -163,14 +163,14 @@ If you need to learn more about the differences between these two ones, check ou
   npm install @ngx-translate/http-loader --save
   ```
 
-- Set up a shared module to load translations and to use the `translate` pipe in each component:
+- Set up a shared module to load translations and to use the `translate` pipe in each component
 
   ```shell
   mkdir -p src/app/shared
   touch shared.module.ts
   ```
 
-- Put the following content in it:
+- Put the following content in it
 
   ```typescript
   import { NgModule } from "@angular/core";
@@ -220,7 +220,7 @@ If you need to learn more about the differences between these two ones, check ou
 
 - Setup configuration file of our unit test aka `tsconfig.spec.json`
 
-  Add the type node the `types` section to use node function like `require`
+  Add the type node in the `types` section to use node function like `require`
 
   ```json5
   {
@@ -257,7 +257,7 @@ If you need to learn more about the differences between these two ones, check ou
   ng add @nguniversal/express-engine
   ```
 
-- Now you can launch your Angular app with:
+- Now you can launch your Angular app with
 
   ```shell
   npm run dev:ssr
