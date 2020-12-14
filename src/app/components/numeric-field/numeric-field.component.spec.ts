@@ -5,12 +5,12 @@ import {
   TestBed,
   tick,
 } from '@angular/core/testing';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateTestingModule } from 'ngx-translate-testing';
 import { of } from 'rxjs';
 import { NumericFieldService } from '../../services/numeric-field.service';
 import { NumericFieldComponent } from './numeric-field.component';
 import { NumericFieldModule } from './numeric-field.module';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateTestingModule } from 'ngx-translate-testing';
 
 describe('NumericFieldComponent', () => {
   let component: NumericFieldComponent;
