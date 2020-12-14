@@ -110,7 +110,7 @@ describe('NumericFieldComponent', () => {
         await writeValueInInput('4');
 
         const errorMessage: HTMLDivElement = dom.querySelector(
-          'div.alert.alert-danger > div'
+          'span.alert.alert-danger > span'
         );
         expect(errorMessage).toBeNull();
       });
@@ -120,7 +120,7 @@ describe('NumericFieldComponent', () => {
           await writeValueInInput('');
 
           const errorMessage: HTMLDivElement = dom.querySelector(
-            'div.alert.alert-danger > div'
+            'span.alert.alert-danger > span'
           );
           expect(errorMessage).not.toBeNull();
         });
@@ -129,7 +129,7 @@ describe('NumericFieldComponent', () => {
           await writeValueInInput('0nf');
 
           const errorMessage: HTMLDivElement = dom.querySelector(
-            'div.alert.alert-danger > div'
+            'span.alert.alert-danger > span'
           );
           expect(errorMessage).not.toBeNull();
         });
@@ -162,7 +162,7 @@ describe('NumericFieldComponent', () => {
         await writeValueInInput('');
 
         const errorMessage: HTMLDivElement = dom.querySelector(
-          'div.alert.alert-danger > div'
+          'span.alert.alert-danger > span'
         );
 
         expect(errorMessage?.innerText).toBe(
@@ -176,7 +176,7 @@ describe('NumericFieldComponent', () => {
         await writeValueInInput('0nf');
 
         const errorMessage: HTMLDivElement = dom.querySelector(
-          'div.alert.alert-danger > div'
+          'span.alert.alert-danger > span'
         );
 
         expect(errorMessage?.innerText).toBe(
@@ -192,7 +192,7 @@ describe('NumericFieldComponent', () => {
         await writeValueInInput('');
 
         const errorMessage: HTMLDivElement = dom.querySelector(
-          'div.alert.alert-danger > div'
+          'span.alert.alert-danger > span'
         );
 
         expect(errorMessage?.innerText).toBe(
@@ -206,7 +206,7 @@ describe('NumericFieldComponent', () => {
         await writeValueInInput('0nf');
 
         const errorMessage: HTMLDivElement = dom.querySelector(
-          'div.alert.alert-danger > div'
+          'span.alert.alert-danger > span'
         );
 
         expect(errorMessage?.innerText).toBe(
