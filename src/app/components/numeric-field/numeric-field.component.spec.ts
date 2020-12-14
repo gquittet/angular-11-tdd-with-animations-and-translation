@@ -28,7 +28,7 @@ describe('NumericFieldComponent', () => {
     const input: HTMLInputElement = dom.querySelector('input');
 
     input.value = value;
-    // Important, n'oublie pas Guillaume de déclancher l'évènement après avoir modifié la valeur.
+    // Important, n'oublie pas Guillaume de déclencher l'évènement après avoir modifié la valeur.
     input.dispatchEvent(new Event('input'));
     input.dispatchEvent(new Event('blur'));
 
